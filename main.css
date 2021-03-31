@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm&Lora&Noto+Sans:wght@700&display=swap');
+
+#main {
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.grid-container {
+    padding: 0 10%;
+    margin: 0 auto;
+}
+
+.main-body-section {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 80px;
+    height: 100%;
+}
+
+#img-div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-div img {
+    background-color:lightgray;
+    max-width: 100%;
+    height: auto;
+}
+
+
+#img-caption{
+    display:none;
+}
+
+.main-title-container {
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Lora', serif;
+    color: white;
+    padding: 5px;
+}
+
+#title {
+    letter-spacing: 5px;
+    font-size: xxx-large;
+}
+
+.main-title-date {
+    font-size: x-large;
+}
+
+.main-title-phrase {
+    font-family: 'Charm', cursive;
+    font-weight: 100;
+    font-size: 28px;
+}
+
+.section-container {
+    background-color: lightgray;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.main-container {
+    display: grid;
+    background-color: #1b1b1b;
+    height: 100%;
+}
+
+.main-container p {
+    font-family: 'Lora', serif;
+    font-size: xxx-large;
+    color: white;
+    margin: 30px 50px 0;
+    border: 5px solid lightgray;
+    width: fit-content;
+    padding: 0 40px;
+}
+
+.info-list ul {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.info-list ul li {
+    color: white;
+    font-size: x-large;
+    padding: 10px 22px;
+}
+
+.main-footer-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: medium;
+}
+
+.main-footer-container p a {
+    color: white;
+}
+
+#tribute-info {
+    color: white;
+    font-size: x-large;
+    font-family: 'Noto Sans';
+}
+
+@media (max-width:900px) {
+    .main-body-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:600px) {
+    .main-container p {
+        font-size: 5vw;
+        padding: 5px 5px;
+    }
+
+    .info-list ul li {
+        font-size: 4vw;
+        padding: 5px 2px;
+    }
+    
+}
